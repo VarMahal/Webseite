@@ -3,6 +3,13 @@ body {
     flex-direction: column;
 }
 
+.mainMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 #main {
     display: flex;
     flex-direction: column;
@@ -12,12 +19,16 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
+#indexBackground {
+    width: 100vw;
+    height: 75vh;
+}
+
 #aboutContainer {
     display: flex;
     flex-direction: column;
     margin-right: 30vw;
     margin-left: 30vw;
-    margin-top: 15px;
     background-color: red;
     border: groove black;
 }
@@ -60,19 +71,6 @@ body {
     border-top: groove black;
 }
 
-.navbar {
-    background-color: #269abc;
-}
-
 footer {
-    background-color: greenyellow;
-}
-
-#indexBackground {
-    width: 100vw;
-    height: 75vh;
-}
-
-#dropdownMenu1 {
-    display:none;
+    background-color: aliceblue;
 }
