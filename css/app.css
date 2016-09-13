@@ -2,7 +2,7 @@ body {
 
 }
 
-#searchStripe {
+.searchStripe {
     border-left: groove black;
     padding-left: 15px;
 }
@@ -20,7 +20,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-#about {
+#aboutContainer {
     margin-right: 30vw;
     margin-left: 30vw;
    margin-top: 15px;
@@ -48,15 +48,6 @@ body {
     background-color: #269abc;
 }
 
-#aboutContainer {
-    border-top: groove black;
-    border-left: groove black;
-    border-right: groove black;
-    margin-right: 30vw;
-    margin-left: 30vw;
-    background-color: red;
-}
-
 footer {
     background-color: greenyellow;
 }
@@ -64,4 +55,8 @@ footer {
 #indexBackground {
     width: 100vw;
     height: 75vh;
+}
+
+#dropdownMenu1 {
+    display:none;
 }
