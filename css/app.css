@@ -25,6 +25,7 @@ body {
     height: 75vh;
 }
 
+
 #aboutContainer {
     display: flex;
     flex-direction: column;
@@ -69,28 +70,19 @@ body {
     background-color: #a8d6fe;
 }
 
-.bottom-border {
-    border-bottom: groove black;
-}
-
-.border-top {
-    border-top: groove black;
-}
-
 footer {
     background-color: aliceblue;
 }
 
 #menu1 {
-    position: relative;
-    display: inline-block;
+
 }
 
 #submenu1 {
     display: none;
-    position: absolute;
     width: 100vw;
     background-color: #00b3ee;
+    position: absolute;
 }
 
 
