@@ -78,7 +78,7 @@ footer {
 
 }
 
-#submenu1 {
+.submenu {
     display: none;
     width: 100vw;
     background-color: #00b3ee;

@@ -1,9 +1,9 @@
 
 
-function showmenu() {
-    document.getElementById("submenu1").style.display = 'block';
+function showmenu(menu) {
+    document.getElementById(menu).style.display = 'block';
 }
 
-function closemenu() {
-    document.getElementById("submenu1").style.display = 'none';
+function closemenu(menu) {
+    document.getElementById(menu).style.display = 'none';
 }

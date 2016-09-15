@@ -21,16 +21,16 @@
 <body>
 
 <nav id="mainMenu" class="mainMenu">
-    <a class="navbar-brand" href="#" onmouseover="showmenu()">
+    <a class="navbar-brand" href="#" onmouseover="showmenu('submenu1')" onmouseleave="closemenu('submenu1')">
         <img class="menuicon" alt="Brand" src="../pictures/message.png">
     </a>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" onmouseover="showmenu('submenu2')" onmouseleave="closemenu('submenu2')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" onmouseover="showmenu('submenu3')" onmouseleave="closemenu('submenu3')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" onmouseover="showmenu('submenu4')" onmouseleave="closemenu('submenu4')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
     <div class="navbar-brand">
@@ -39,7 +39,7 @@
     <a class="navbar-brand searchStripe" href="#">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://twitter.com/samsaclub" target="_blank">
         <img class="menuicon" alt="Tripper Icon" src="../pictures/twitter.png">
     </a>
 </nav>
@@ -47,12 +47,36 @@
 
 <div id="main">
 
-    <nav id="submenu1" class="mainMenu" onmouseleave="closemenu()">
+    <nav id="submenu1" class="mainMenu submenu" onmouseleave="closemenu('submenu1')">
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
+    </nav>
+    <nav id="submenu2" class="mainMenu submenu" onmouseleave="closemenu('submenu2')">
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/message.png">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/message.png">
+        </a>
+    </nav>
+    <nav id="submenu3" class="mainMenu submenu" onmouseleave="closemenu('submenu3')">
         <a class="navbar-brand" href="#">
             <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
         </a>
         <a class="navbar-brand" href="#">
-            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+            <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
+        </a>
+    </nav>
+    <nav id="submenu4" class="mainMenu submenu" onmouseleave="closemenu('submenu4')">
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
         </a>
     </nav>
 
