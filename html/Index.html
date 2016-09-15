@@ -20,8 +20,9 @@
 </head>
 <body>
 
+
 <nav class="mainMenu">
-    <a class="navbar-brand" href="http://www.google.de" target="_blank">
+    <a class="navbar-brand" href="#" onclick="showmenu(submenu1)">
         <img class="menuicon" alt="Brand" src="../pictures/message.png">
     </a>
     <a class="navbar-brand" href="#">
@@ -43,6 +44,16 @@
         <img class="menuicon" alt="Tripper Icon" src="../pictures/twitter.png">
     </a>
 </nav>
+
+<nav id="submenu1">
+    <a class="navbar-brand" href="http://www.google.de" target="_blank">
+        <img class="menuicon" alt="Brand" src="../pictures/message.png">
+    </a>
+    <a class="navbar-brand" href="#">
+        <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+    </a>
+</nav>
+
 
 <div id="main">
 
@@ -107,6 +118,6 @@
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../js/bootstrap.min.js"></script>
-<script src="../bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>
