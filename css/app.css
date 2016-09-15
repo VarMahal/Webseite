@@ -89,6 +89,8 @@ footer {
 #submenu1 {
     display: none;
     position: absolute;
+    width: 100vw;
+    background-color: #00b3ee;
 }
 
 

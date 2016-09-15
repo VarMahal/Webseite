@@ -21,8 +21,8 @@
 <body>
 
 
-<nav class="mainMenu">
-    <a class="navbar-brand" href="#" onclick="showmenu(submenu1)">
+<nav id="mainMenu" class="mainMenu">
+    <a class="navbar-brand" href="#" onclick="showmenu()">
         <img class="menuicon" alt="Brand" src="../pictures/message.png">
     </a>
     <a class="navbar-brand" href="#">
@@ -45,9 +45,9 @@
     </a>
 </nav>
 
-<nav id="submenu1">
-    <a class="navbar-brand" href="http://www.google.de" target="_blank">
-        <img class="menuicon" alt="Brand" src="../pictures/message.png">
+<nav id="submenu1" class="mainMenu">
+    <a class="navbar-brand" href="#" onclick="closemenu()">
+        <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
     </a>
     <a class="navbar-brand" href="#">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
