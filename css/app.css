@@ -3,12 +3,12 @@ body {
     flex-direction: column;
 }
 
-.mainMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+
+.navbar {
+    margin-bottom:0;
 }
+
 
 #leftMenu {
     display: flex;
@@ -59,9 +59,8 @@ body {
 }
 
 .menuicon {
-    height: 40px;
-    width: 55px;
-    margin: 15px;
+    height: 20px;
+    width: 35px;
 }
 
 .dropdownicon {
@@ -89,7 +88,11 @@ footer {
 .submenu {
     display: none;
     width: 100vw;
-    background-color: #00b3ee;
+    background-color: #3adb76;
     position: absolute;
 }
+
+
+
+
 
