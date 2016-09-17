@@ -20,15 +20,13 @@
 
     <!-- Bootstrap -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <link href="../css/app.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/custom.css" rel="stylesheet">
 
     <style>
         /* Your external css file will go here. This is just for testing :) */
-        .mycustombtn{
-            margin-bottom: 0;
-        }
+
+
+
 
     </style>
 
@@ -36,7 +34,56 @@
 <body>
 
 
-<nav class="navbar navbar-inverse mycustombtn">
+
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation" id="topmenu">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" data-toggle="collapse" data-target="#one"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="collapse" data-target="#two"><img class="menuicon" alt="Brand" src="../pictures/twitter.png"></a>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="collapse" data-target="#three"><img class="menuicon" alt="Brand" src="../pictures/soundcloud.png"></a>
+            </li>
+            <li>
+                <a href="#" data-toggle="collapse" data-target="#four"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation" id="submenu">
+        <ul class="nav navbar-nav collapse" id="one">
+            <li class="active"><a href="GenreBelletristik.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a></li>
+            <li class="active"><a href="GenreMusic.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a></li>
+            <li class="active"><a href="GenreArticel.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a></li>
+        </ul>
+        <ul class="nav navbar-nav collapse" id="two">
+            <li class="active"><a href="GenreBelletristik.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/twitter.png"></a></li>
+            <li class="active"><a href="GenreMusic.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/twitter.png"></a></li>
+            <li class="active"><a href="GenreArticel.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/twitter.png"></a></li>
+        </ul>
+        <ul class="nav navbar-nav collapse" id="three">
+            <li class="active"><a href="GenreBelletristik.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/soundcloud.png"></a></li>
+            <li class="active"><a href="GenreMusic.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/soundcloud.png"></a></li>
+            <li class="active"><a href="GenreArticel.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/soundcloud.png"></a></li>
+        </ul>
+        <ul class="nav navbar-nav collapse" id="four">
+            <li class="active"><a href="GenreBelletristik.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/message.png"></a></li>
+            <li class="active"><a href="GenreMusic.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/soundcloud.png"></a></li>
+            <li class="active"><a href="GenreArticel.html" onmouseleave="closeAllmenu()"><img class="menuicon" alt="Brand" src="../pictures/twitter.png"></a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!--
+
+<nav class="navbar navbar-inverse mycustombtn navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="Index.html">TheSamsaClub</a>
@@ -62,12 +109,14 @@
         </ul>
     </div>
 </nav>
-
+-->
 
 <div id="main">
 
 
-    <nav id="submenu1" class="navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
+    <!--
+
+    <nav id="submenu1" class="submenu navbar navbar-inverse mycustombtn">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="Index.html">Belletristik</a>
@@ -80,7 +129,7 @@
         </div>
     </nav>
 
-    <nav id="submenu2" class="navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
+    <nav id="submenu2" class="submenu navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="Index.html">Music</a>
@@ -93,7 +142,7 @@
         </div>
     </nav>
 
-    <nav id="submenu3" class="navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
+    <nav id="submenu3" class="submenu navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="Index.html">Articel</a>
@@ -106,7 +155,7 @@
         </div>
     </nav>
 
-    <nav id="submenu4" class="navbar navbar-inverse mycustombtn" onmouseleave="closeAllmenu()">
+    <nav id="submenu4" class="navbar navbar-inverse mycustombtn submenu" onmouseleave="closeAllmenu()">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="Index.html">Josua Articel</a>
@@ -118,6 +167,8 @@
             </ul>
         </div>
     </nav>
+
+    -->
 
     <img id="indexBackground" alt="Brand"
          src="http://vignette1.wikia.nocookie.net/goodgame-empire/images/2/2d/Platzhalter.jpg/revision/latest?cb=20141118172328&path-prefix=de">
