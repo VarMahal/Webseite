@@ -20,18 +20,17 @@
 </head>
 <body>
 
-
 <nav id="mainMenu" class="mainMenu">
-    <a class="navbar-brand" href="Index.html" onmouseover="showmenu('submenu1')" onmouseleave="closemenu('submenu1')">
+    <a class="navbar-brand" href="Index.html" onmouseover="showmenu('submenu1')" onmouseenter="closeOthermenus('submenu1')">
         <img class="menuicon" alt="Brand" src="../pictures/message.png">
     </a>
-    <a class="navbar-brand" href="GenreBelletristik.html" onmouseover="showmenu('submenu2')" onmouseleave="closemenu('submenu2')">
+    <a class="navbar-brand" href="GenreBelletristik.html" onmouseover="showmenu('submenu2')" onmouseenter="closeOthermenus('submenu2')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
-    <a class="navbar-brand" href="GenreMusic.html" onmouseover="showmenu('submenu3')" onmouseleave="closemenu('submenu3')">
+    <a class="navbar-brand" href="GenreMusic.html" onmouseover="showmenu('submenu3')" onmouseenter="closeOthermenus('submenu3')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
-    <a class="navbar-brand" href="GenreArticel.html" onmouseover="showmenu('submenu4')" onmouseleave="closemenu('submenu4')">
+    <a class="navbar-brand" href="GenreArticel.html" onmouseover="showmenu('submenu4')" onmouseenter="closeOthermenus('submenu4')">
         <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
     </a>
     <div class="navbar-brand">
@@ -48,7 +47,7 @@
 
 <div id="main">
 
-    <nav id="submenu1" class="mainMenu submenu" onmouseleave="closemenu('submenu1')">
+    <nav id="submenu1" class="mainMenu submenu" onmouseleave="closeAllmenu()">
         <a class="navbar-brand" href="#">
             <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
         </a>
@@ -56,7 +55,7 @@
             <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
         </a>
     </nav>
-    <nav id="submenu2" class="mainMenu submenu" onmouseleave="closemenu('submenu2')">
+    <nav id="submenu2" class="mainMenu submenu" onmouseleave="closeAllmenu()">
         <a class="navbar-brand" href="#">
             <img class="menuicon" alt="Brand" src="../pictures/message.png">
         </a>
@@ -64,7 +63,7 @@
             <img class="menuicon" alt="Brand" src="../pictures/message.png">
         </a>
     </nav>
-    <nav id="submenu3" class="mainMenu submenu" onmouseleave="closemenu('submenu3')">
+    <nav id="submenu3" class="mainMenu submenu" onmouseleave="closeAllmenu()">
         <a class="navbar-brand" href="#">
             <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
         </a>
@@ -72,15 +71,14 @@
             <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
         </a>
     </nav>
-    <nav id="submenu4" class="mainMenu submenu" onmouseleave="closemenu('submenu4')">
+    <nav id="submenu4" class="mainMenu submenu" onmouseleave="closeAllmenu()">
         <a class="navbar-brand" href="#">
             <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
         </a>
         <a class="navbar-brand" href="#">
-            <img class="menuicon" alt="Brand" src="../pictures/twitter.png">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
         </a>
     </nav>
-
 
 </div>
 

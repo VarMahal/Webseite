@@ -21,30 +21,36 @@
 <body>
 
 <nav id="mainMenu" class="mainMenu">
-    <a class="navbar-brand" href="Index.html" onmouseover="showmenu('submenu1')" onmouseenter="closeOthermenus('submenu1')">
-        <img class="menuicon" alt="Brand" src="../pictures/message.png">
-    </a>
-    <a class="navbar-brand" href="GenreBelletristik.html" onmouseover="showmenu('submenu2')" onmouseenter="closeOthermenus('submenu2')">
-        <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
-    </a>
-    <a class="navbar-brand" href="GenreMusic.html" onmouseover="showmenu('submenu3')" onmouseenter="closeOthermenus('submenu3')">
-        <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
-    </a>
-    <a class="navbar-brand" href="GenreArticel.html" onmouseover="showmenu('submenu4')" onmouseenter="closeOthermenus('submenu4')">
-        <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
-    </a>
-
-
-
-    <div class="navbar-brand">
-        <input type="text" class="form-control" placeholder="Search">
+    <div id="leftMenu">
+        <a class="navbar-brand" href="Index.html" onmouseover="showmenu('submenu1')"
+           onmouseenter="closeOthermenus('submenu1')">
+            <img class="menuicon" alt="Brand" src="../pictures/message.png">
+        </a>
+        <a class="navbar-brand" href="GenreBelletristik.html" onmouseover="showmenu('submenu2')"
+           onmouseenter="closeOthermenus('submenu2')">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
+        <a class="navbar-brand" href="GenreMusic.html" onmouseover="showmenu('submenu3')"
+           onmouseenter="closeOthermenus('submenu3')">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
+        <a class="navbar-brand" href="GenreArticel.html" onmouseover="showmenu('submenu4')"
+           onmouseenter="closeOthermenus('submenu4')">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
     </div>
-    <a class="navbar-brand searchStripe" href="#">
-        <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
-    </a>
-    <a class="navbar-brand" href="https://twitter.com/samsaclub" target="_blank">
-        <img class="menuicon" alt="Tripper Icon" src="../pictures/twitter.png">
-    </a>
+    <div id="rightMenu">
+        <div id="menuSearch" class="navbar-brand">
+            <input type="text" class="form-control" placeholder="Search">
+            <button type="submit">Submit</button>
+        </div>
+        <a class="navbar-brand searchStripe" href="#">
+            <img class="menuicon" alt="Brand" src="../pictures/soundcloud.png">
+        </a>
+        <a class="navbar-brand icoTwitter" href="https://twitter.com/samsaclub" target="_blank">
+            <img class="menuicon" alt="Tripper Icon" src="../pictures/twitter.png">
+        </a>
+    </div>
 </nav>
 
 
