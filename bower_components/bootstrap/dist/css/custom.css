@@ -5,16 +5,9 @@ body {
     flex-direction: column;
 }
 
-.menuicon {
-    height: 23px;
-    width: 35px;
-}
-
-.mainMenu {
-    background-color: #00b3ee;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.icon {
+    height: 30px;
+    width: 30px;
 }
 
 .search-form .form-group {
