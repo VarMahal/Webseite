@@ -1,43 +1,39 @@
-
-
-function showmenu(menu) {
-    document.getElementById(menu).style.display = 'block';
-}
-
-function closeAllmenu() {
-    document.getElementById('submenu1').style.display = 'none';
-    document.getElementById('submenu2').style.display = 'none';
-    document.getElementById('submenu3').style.display = 'none';
-    document.getElementById('submenu4').style.display = 'none';
-}
-
-function closeOthermenus(menu) {
-    document.getElementById('submenu1').style.display = 'none';
-    document.getElementById('submenu2').style.display = 'none';
-    document.getElementById('submenu3').style.display = 'none';
-    document.getElementById('submenu4').style.display = 'none';
-    document.getElementById(menu).style.display = 'block';
-}
-
-
-$('.collapse').on('shown.bs.collapse', function (e) {
-    $('.collapse').not(this).removeClass('in');
-});
-
-$('[data-toggle=collapse]').click(function (e) {
-    $('[data-toggle=collapse]').parent('li').removeClass('active');
-    $(this).parent('li').toggleClass('active');
-});
-
-$(document).ready(function() {
-    $('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
-        event.preventDefault();
-        $('body').toggleClass('navbar-more-show');
-        if ($('body').hasClass('navbar-more-show'))	{
-            $('a[href="#navbar-more-show"]').closest('li').addClass('active');
-        }else{
-            $('a[href="#navbar-more-show"]').closest('li').removeClass('active');
+$(document).ready(function(){
+    var submitIcon = $('.searchbox-icon');
+    var inputBox = $('.searchbox-input');
+    var searchBox = $('.searchbox');
+    var isOpen = false;
+    submitIcon.click(function(){
+        if(isOpen == false){
+            searchBox.addClass('searchbox-open');
+            inputBox.focus();
+            isOpen = true;
+        } else {
+            searchBox.removeClass('searchbox-open');
+            inputBox.focusout();
+            isOpen = false;
         }
+    });
+    submitIcon.mouseup(function(){
         return false;
     });
+    searchBox.mouseup(function(){
+        return false;
+    });
+    $(document).mouseup(function(){
+        if(isOpen == true){
+            $('.searchbox-icon').css('display','block');
+            submitIcon.click();
+        }
+    });
 });
+function buttonUp(){
+    var inputVal = $('.searchbox-input').val();
+    inputVal = $.trim(inputVal).length;
+    if( inputVal !== 0){
+        $('.searchbox-icon').css('display','none');
+    } else {
+        $('.searchbox-input').val('');
+        $('.searchbox-icon').css('display','block');
+    }
+}
