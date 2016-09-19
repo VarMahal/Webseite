@@ -152,3 +152,8 @@ body {
     text-decoration:none;
     color: #d74b4b;
 }
+
+.open > .dropdown-menu {
+    display: flex;
+    flex-direction: row;
+}
