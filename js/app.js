@@ -52,7 +52,7 @@ $('ul.nav li.dropdown').hover(function() {
 
 
 
-
+/* Weiß nicht genau für was ich das gebrauchen kann */
 
 
 $(function(){
