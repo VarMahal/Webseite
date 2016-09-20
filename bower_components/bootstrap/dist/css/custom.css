@@ -23,7 +23,39 @@ body {
 }
 
 .submenu li a {
-
+    height: 6vh;
+    min-height: 25px;
 }
 
+
+
+
+/** search input **/
+.searchfield {
+    width: 1%;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    border-color: white;
+}
+
+.searchfield:hover {
+    width: 30%;
+    color: #666;
+}
+
+#searchbtn {
+    background-image: url("../../../../pictures/search.png");
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+#searchbtn:hover + .searchfield {
+    border-color: #0a0a0a;
+    width: 30%;
+}
 
