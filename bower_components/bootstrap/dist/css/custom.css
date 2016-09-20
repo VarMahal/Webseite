@@ -158,8 +158,9 @@ body {
     flex-direction: row;
 }
 
-#test1 {
+.test1 {
     width: 100vw;
-    height: 8vh;
-    min-height: 50px;
+    height: 6vh;
+    min-height: 25px;
+    background-color: #00b3ee;
 }
