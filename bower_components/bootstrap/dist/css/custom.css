@@ -29,7 +29,7 @@ body {
 
 .searchfield {
     visibility: hidden;
-    width: 1%;
+    width: 0%;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     transition: all 0.4s linear;
@@ -37,13 +37,13 @@ body {
 
 .searchfield:hover {
     visibility: visible;
-    width: 30%;
+    width: 40%;
 }
 
 #searchbtn {
     background-image: url("../../../../pictures/search.png");
-    height: 25px;
-    width: 25px;
+    height: auto;
+    width: auto;
     cursor: pointer;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
@@ -52,6 +52,15 @@ body {
 
 #searchbtn:hover + .searchfield {
     visibility: visible;
-    width: 40%;
+    width: 10%;
 }
 
+#searchform {
+    padding-top: 10px;
+}
+
+.fieldcontainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
