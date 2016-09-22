@@ -1,8 +1,16 @@
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
 
+#test {
+    height: 80vh;
+}
+
 body {
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    background-color: #00b3ee;
 }
 
 .icon {
@@ -29,7 +37,7 @@ body {
 
 .searchfield {
     visibility: hidden;
-    width: 0%;
+    width: 0;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     transition: all 0.4s linear;
