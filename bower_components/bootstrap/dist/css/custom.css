@@ -33,11 +33,12 @@ body {
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     transition: all 0.4s linear;
+    order: 1;
 }
 
 .searchfield:hover {
     visibility: visible;
-    width: 40%;
+    width: 45%;
 }
 
 #searchbtn {
@@ -48,11 +49,12 @@ body {
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     transition: all 0.4s linear;
+    order: 2;
 }
 
 #searchbtn:hover + .searchfield {
     visibility: visible;
-    width: 10%;
+    width: 45%;
 }
 
 #searchform {
