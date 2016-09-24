@@ -1,8 +1,5 @@
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
 
-#test {
-    height: 80vh;
-}
 
 body {
     display: flex;
@@ -11,6 +8,8 @@ body {
 
 footer {
     background-color: #00b3ee;
+    display: flex;
+    flex-direction: row;
 }
 
 .icon {
@@ -24,7 +23,6 @@ footer {
 }
 
 .submenu {
-    width: 100vw;
     height: 6vh;
     min-height: 25px;
     background-color: #00b3ee;
@@ -35,42 +33,61 @@ footer {
     min-height: 25px;
 }
 
-.searchfield {
-    visibility: hidden;
-    width: 0;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-    order: 1;
+#custom-search-input {
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
 }
 
-.searchfield:hover {
-    visibility: visible;
-    width: 45%;
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 
-#searchbtn {
-    background-image: url("../../../../pictures/search.png");
-    height: auto;
-    width: auto;
-    cursor: pointer;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-    order: 2;
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#0a0a0a;
 }
 
-#searchbtn:hover + .searchfield {
-    visibility: visible;
-    width: 45%;
+.search-query:focus + button {
+    z-index: 3;
 }
 
-#searchform {
-    padding-top: 10px;
+.container {
+    width: 10vw;
+    min-width: 100px;
 }
 
-.fieldcontainer {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
+#main {
+    background-color: black;
+    height: 100vh;
 }
+
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
